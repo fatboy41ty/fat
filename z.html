@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="video" loop src="x.mp4" width="180px"></video>
+    <button id="play"onclick="done()">play</button>
+    <input type="range"id="input"></input>
+    <script>
+        var c=document.getElementById("video");
+function done(){
+    c.play();
+}
+var range=document.getElementById("input");
+range.addEventListener('input',function(){
+    c.currentTime=range.value;
+    range.max=Math.floor(c.duration);
+});
+c.addEventListener('timeupdate',function(){
+    cTime.innerHTML=Math
+})
+        var play=document.getElementById("play");
+
+      
+    
+        
+        
+        
+        </script>
+</body>
+</html>
